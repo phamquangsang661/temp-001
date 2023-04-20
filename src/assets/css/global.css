@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: montserrat;
+    src: url('/fonts/montserrat.ttf') format('truetype');
+}
+
+html {
+    @apply font-primary scroll-smooth
+}
+
+body {
+    @apply hide-scroll-ms relative
+}
+
+
+
+/* Common */
+
+
+/* Clip image into path vector */
+.image-mask {
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 26" width="40px" height="50px"><path d="M0.138164 19.5293C-0.915436 9.51478 4.17258 0.902433 11.4482 0.0864439C18.7231 -0.729545 27.4663 4.32788 30.9209 11.1766C34.367 17.9941 29.279 26.6064 19.6109 30.6202C9.94355 34.6333 1.2003 29.5752 0.138164 19.5293Z"></path></svg>') bottom/contain no-repeat
+}
+
+.scroll-custom-vertical::-webkit-scrollbar {}
+
+.scroll-custom::-webkit-scrollbar {
+    height: 10px;
+
+}
+
+.scroll-custom,
+.scroll-custom-vertical {
+    @apply snap-x scroll-px-[auto] overscroll-auto
+}
+
+.scroll-custom>*,
+.scroll-custom-vertical>* {
+    @apply snap-start
+}
+
+
+
+.scroll-custom::-webkit-scrollbar-track,
+.scroll-custom-vertical::-webkit-scrollbar-track {
+    background-color: rgba(193, 18, 31, 0.3);
+    border-radius: 25px;
+    background-clip: padding-box;
+}
+
+.scroll-mx-8::-webkit-scrollbar-track {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+
+.scroll-mx-110p::-webkit-scrollbar-track {
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
+.scroll-custom::-webkit-scrollbar-thumb,
+.scroll-custom-vertical::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #FF303E;
+}
+
+
+.scroll-mx-24::-webkit-scrollbar-track {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+@layer base {
+    .hide-scroll-ms {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .hide-scroll-ms::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Typo */
+    .text-typo-h2 {
+        @apply text-[60px] leading-[64px] font-bold tracking-[-0.5px];
+    }
+
+    .text-typo-h3 {
+        @apply text-[44px] leading-[48px] font-bold;
+    }
+
+    .text-typo-h4 {
+        @apply text-[39px] leading-[48.17px] font-semibold tracking-[0.25px];
+    }
+
+
+    .text-typo-h5 {
+        @apply text-[24px] leading-[32px] font-semibold;
+    }
+
+
+    .text-typo-h6 {
+        @apply text-[19px] leading-[24px] font-light tracking-[0.15px];
+    }
+
+
+    .text-typo-body {
+        @apply text-[16px] leading-[24px] font-normal tracking-[0.15px];
+    }
+
+    .text-typo-overline {
+        @apply text-[12px] leading-[32px] font-bold tracking-[1px] uppercase;
+    }
+
+}
+
+.hide-scroll-desktop::-webkit-scrollbar {
+    @apply md:hidden
+}
+
+.hide-scroll-desktop {
+    @apply md:hide-scroll-ms
+}
+
