@@ -14,8 +14,8 @@ export function RefreshedPopup({ isOpen, onClose }: RefreshedPopup) {
             {isOpen && <div
                 className="w-screen h-screen min-h-full popup-active flex flex-row justify-center items-center text-center fixed top-0 bottom-0 right-0 left-0 z-[1000] overscroll-none ">
                 <div onClick={onClose} className=" bg-[rgb(0,0,0,0.5)] w-full h-full absolute top-0 left-0 z-[0]"></div>
-                <div className="z-[1] mx-5 md:mx-0 w-[640px] sm:h-[520px] overflow-hidden bg-[url('src/assets/images/background_refreshedpopup2.png')] bg-no-repeat bg-cover flex-col flex rounded-[33.2474px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
-                    <div className="relative flex justify-center items-center h-full md:w-[640px] bg-[url('src/assets/images/background_refreshedpopup.png')]">
+                <div className="z-[1] mx-5 md:mx-0 w-[640px] sm:h-[520px] overflow-hidden bg-[url('/images/example/background_refreshedpopup2.png')] bg-no-repeat bg-cover flex-col flex rounded-[33.2474px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
+                    <div className="relative flex justify-center items-center h-full md:w-[640px] bg-[url('/images/example/background_refreshedpopup.png')]">
                         <Logo2 size={400} textFillColor="black" className="hidden md:block" ></Logo2>
                         <Logo2 size={200} textFillColor="black" className="block md:hidden my-3" ></Logo2>
                         <div className="absolute top-0 right-0 mt-[18px] mr-[24px] cursor-pointer" onClick={onClose}>
