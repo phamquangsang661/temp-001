@@ -1,6 +1,6 @@
 import { HomeTitle } from "./common/HomeTitle";
 import { ScrollInfo } from "./common/ScrollInfo";
-import { DomainsCard } from "./domains/DomainsCard";
+import { DomainsCard } from "./domain/DomainsCard";
 import ImgExample01 from "/images/example/imgexample01.jpg";
 import { useHorizontalScroll } from "@hooks/index";
 
