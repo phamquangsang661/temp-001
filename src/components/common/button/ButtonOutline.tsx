@@ -11,6 +11,6 @@ export function ButtonOutline({ className = "", textClassName = "", children, on
     return <button  {...props}
         onClick={onClick}
         className={`border-[2px] hover:border-[2px] border-primary-light  hover:bg-primary-light transition duration-500 ease-in-out text-primary-default hover:text-primary-contrast rounded-full ${className}`}>
-        <p className={` text-[17px] leading-[21px] font-bold text-center ${textClassName}`}>{children}</p>
+        <p className={` text-[17px] leading-[21px] font-bold text-center whitespace-nowrap ${textClassName}`}>{children}</p>
     </button>
 }
