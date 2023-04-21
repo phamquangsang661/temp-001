@@ -29,8 +29,8 @@ export function RefreshedPopup({ isOpen, onClose }: RefreshedPopup) {
                         <p className=" text-[#000000] md:h-[151px] text-center mx-[32px] md:mx-[83px] text-typo-body mb-6 md:mb-0">Wir sind stolz darauf, unser brandneues Rebranding zu präsentieren
                             , das unseren Fokus auf zukunftsorientierte IT-Lösungen und kundenorientierte Dienstleistungen
                             unterstreicht. Taucht ein in unsere neue Welt der digitalen Möglichkeiten!</p>
-                        <Button className="w-[194px] h-[48px] py-[13.5px] px-[36px] !bg-primary-light mb-[32px]"
-                            textClassName="w-[122px] h-[21px] font-bold text-[17px] leading-[21px]" props={{}}>
+                        <Button className=" py-[13.5px] px-[36px] !bg-primary-light mb-[32px]"
+                            textClassName=" font-bold text-[17px] leading-[21px]" props={{}}>
                             Zu allen Jobs!
                         </Button>
                     </div>

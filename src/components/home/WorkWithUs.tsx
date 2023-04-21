@@ -70,23 +70,23 @@ export function WorkWithUs() {
             <div className="w-full mt-[53px] md:mt-[25px] flex flex-col gap-y-[16px] md:flex-row md:gap-x-[32px] md:justify-center">
                 {/* Button Zu allen Jobs */}
                 <div className="w-fit h-fit mx-auto md:mx-0">
-                    <Button className="w-[194px] h-[48px] py-[13.5px] px-[36px]"
-                        textClassName="w-[122px] h-[21px] font-bold text-[17px] leading-[21px]" props={{}}>
+                    <Button className="py-[13.5px] px-[36px]"
+                        textClassName="font-bold text-[17px] leading-[21px]" props={{}}>
                         Zu allen Jobs!
                     </Button>
                 </div>
 
                 {/* Button Mehr anzeigen! */}
                 <div className="w-fit h-fit mx-auto md:mx-0">
-                    <ButtonOutline className="w-[194px] h-[48px] py-[13.5px] px-[28px]"
-                        textClassName="w-[138px] h-[21px] font-bold text-[17px] leading-[20.72px]" props={{}}>
+                    <ButtonOutline className="py-[13.5px] px-[28px]"
+                        textClassName="font-bold text-[17px] leading-[20.72px]" props={{}}>
                         Mehr anzeigen!
                     </ButtonOutline>
                 </div>
             </div>
 
-           {/* scroll */}
-           <ScrollInfo className="mb-[109px] mt-[155px] md:mt-[264px] md:mb-0"></ScrollInfo>
+            {/* scroll */}
+            <ScrollInfo className="mb-[109px] mt-[155px] md:mt-[264px] md:mb-0"></ScrollInfo>
         </section>
     )
 }
