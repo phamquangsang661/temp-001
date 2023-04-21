@@ -51,16 +51,7 @@ body {
     background-clip: padding-box;
 }
 
-.scroll-mx-8::-webkit-scrollbar-track {
-    margin-left: 32px;
-    margin-right: 32px;
-}
 
-
-.scroll-mx-110p::-webkit-scrollbar-track {
-    margin-left: 110px;
-    margin-right: 110px;
-}
 
 .scroll-custom::-webkit-scrollbar-thumb,
 .scroll-custom-vertical::-webkit-scrollbar-thumb {
@@ -89,6 +80,17 @@ body {
 }
 
 @layer base {
+    .scroll-mx-8::-webkit-scrollbar-track {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+
+    .scroll-mx-220p::-webkit-scrollbar-track {
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+
     .hide-scroll-ms {
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -139,4 +141,3 @@ body {
 .hide-scroll-desktop {
     @apply md:hide-scroll-ms
 }
-
