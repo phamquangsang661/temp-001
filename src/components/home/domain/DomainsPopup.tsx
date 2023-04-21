@@ -8,16 +8,18 @@ export interface DomainPopup {
   onClose: () => void;
 }
 export const DomainPopup = ({ isOpen, onClose }: DomainPopup) => {
-
   return (
     <>
       {isOpen && (
         <div
-
-          className={`w-screen h-screen z-[1000] fixed  flex items-center  mx-auto justify-center top-0 bottom-0 left-0 bg-[rgb(17,17,17,0.5)] overscroll-contain `}
+          className={`h-screen min-h-full popup-active flex flex-row justify-center items-center text-center fixed top-0 bottom-0 right-0 left-0 z-[1000] overscroll-none `}
         >
-
-          <div className=" bg-primary-contrast min-h-[529px] w-[calc(100%-30px)] box-border rounded-[30px] md:flex md:flex-col md:justify-center md:items-center md:overflow-hidden xl:items-start xl:max-w-[1400px] xl:max-h-[691px]">
+          <div
+            onClick={onClose}
+            className=" bg-[rgb(0,0,0,0.5)] w-full h-full absolute top-0 left-0 z-[0]"
+          ></div>
+          
+          <div className="z-[1] bg-primary-contrast min-h-[529px] w-[calc(100%-30px)] box-border rounded-[30px] md:flex md:flex-col md:justify-center md:items-center overflow-hidden xl:items-start xl:max-w-[1400px] xl:max-h-[691px]">
             <div
               className="close flex justify-end w-full px-[15px] py-[15px] md:px-[27px] md:py-[21px]"
               onClick={onClose}
@@ -87,7 +89,6 @@ export const DomainPopup = ({ isOpen, onClose }: DomainPopup) => {
               />
             </div>
           </div>
-
         </div>
       )}
     </>

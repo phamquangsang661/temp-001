@@ -1,5 +1,5 @@
 import { ButtonOutline } from "@components/common";
-import { useFixedPopup } from "@hooks/index";
+import { usePopup } from "@hooks/index";
 import { DomainPopup } from "./DomainsPopup";
 
 export interface DomainsCard {
@@ -14,9 +14,8 @@ export function DomainsCard({
   className = "",
   imageUrl = "",
 }: DomainsCard) {
-  const { isOpen, open, close } = useFixedPopup()
+  const { isOpen, open, close } = usePopup();
   return (
-
     <>
       <DomainPopup isOpen={isOpen} onClose={close} />
       <div
@@ -25,7 +24,11 @@ export function DomainsCard({
     `}
       >
         <div className="px-[88px] md:px-0 md:max-h-[100vh] max-sm:h-full md:w-[460px] w-full flex justify-center overflow-hidden">
-          <img src={imageUrl} alt="" className="image-mask h-full object-cover" />
+          <img
+            src={imageUrl}
+            alt=""
+            className="image-mask h-full object-cover"
+          />
         </div>
 
         <div className="content text-center mt-[40px] lg:text-start md:flex md:flex-col lg:items-start w-[400px]">
@@ -36,7 +39,12 @@ export function DomainsCard({
             {content}
           </p>
           {/* button */}
-          <ButtonOutline onClick={open} children={"Referenzen Entdecken"} textClassName="text-[17px] py-[14px] px-[28px]" className="mt-[33px]" />
+          <ButtonOutline
+            onClick={open}
+            children={"Referenzen Entdecken"}
+            textClassName="text-[17px] py-[14px] px-[28px]"
+            className="mt-[33px]"
+          />
         </div>
       </div>
     </>
