@@ -97,10 +97,10 @@ export function Footer() {
                 </div>
                 <div className="">
                     <div className="mx-[88px] w-auto h-0 border-solid border-[1px] border-primary-light mb-[28px] md:hidden"></div>
-                    <ul className="flex text-primary-contrast gap-[23px] justify-center mb-[13px]">
+                    <ul className="grid grid-cols-4 text-primary-contrast gap-[23px] justify-items-center mb-[13px] w-fit mx-auto">
                         {footerMenuData.map(item => (
-                            <li className="hover:text-primary-light text-[17px] font-[500] leading-[25px]" key={item.title}>
-                                <a className="" href={item.link}>{item.title}</a>
+                            <li className="hover:text-primary-light text-[17px] font-[500] leading-[25px] w-full text-center" key={item.title}>
+                                <a className="w-full text-center" href={item.link}>{item.title}</a>
                             </li>
                         ))}
                     </ul>
