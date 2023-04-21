@@ -32,10 +32,10 @@ export function DomainsCard({
         </div>
 
         <div className="content text-center mt-[40px] w-[calc(100vw-64px)] max-w-[500px] lg:text-start md:flex md:flex-col lg:items-start">
-          <h2 className="font-bold text-[30px] md:text-[44px] md:leading-[48px] md:p-0 px-[85px] leading-[36px]">
+          <h2 className="font-bold text-center text-[30px] md:text-[44px] md:leading-[48px] md:p-0 px-[85px] leading-[36px]">
             {title}
           </h2>
-          <p className="leading-[24px] font-normal px-[32px] md:text-[16px] md:pt-[8px] md:p-0 tracking-[-0.5px]">
+          <p className="leading-[24px] text-center font-normal px-[32px] md:text-[16px] md:pt-[8px] md:p-0 tracking-[-0.5px]">
             {content}
           </p>
           {/* button */}
