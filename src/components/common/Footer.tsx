@@ -34,7 +34,7 @@ export function Footer() {
                         <Logo2 size={140}></Logo2>
                     </div>
                     <p className="text-[40px] md:text-[60px] font-bold leading-[48px] text-center text-primary-contrast mt-[23px] md:mt-[288px]">Let’s Connect.</p>
-                    <div className="md:mx-[400px] mt-[11px] mx-[88px] md:w-auto h-0 border-solid border-[1px] border-primary-light md:mt-[40px]"></div>
+                    <div className="xl:mx-[400px] mt-[11px] mx-[88px] md:w-auto h-0 border-solid border-[1px] border-primary-light md:mt-[40px]"></div>
                 </div>
                 <div className="md:hidden text-center">
                     <p className="text-[18.38px] font-semibold leading-[24.5px] text-center text-primary-contrast">
