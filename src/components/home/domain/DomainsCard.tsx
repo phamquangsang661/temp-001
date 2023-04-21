@@ -23,7 +23,7 @@ export function DomainsCard({
         flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] lg:flex-row-reverse md:items-center md:justify-center md:basis-full flex-1 md:px-[20%] lg:px-[10%] flex scroll-mx-[32px] md:scroll-mx-[unset] ${className}
     `}
       >
-        <div className="px-[88px] md:px-0 md:max-h-[100vh] w-[calc(100vw-64px)] max-w-[500px] max-md:h-full flex justify-center overflow-hidden">
+        <div className="px-[88px] md:px-0 md:max-h-[100vh] w-[calc(100vw-64px)] max-sm:h-full md:w-[420px] flex justify-center overflow-hidden">
           <img
             src={imageUrl}
             alt=""
