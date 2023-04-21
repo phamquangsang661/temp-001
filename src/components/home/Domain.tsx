@@ -21,7 +21,7 @@ export function Domain() {
         </HomeTitle>
 
         <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center">
-          <div ref={elRef} className="overscroll-auto scroll-custom pb-[84px] !scroll-px-[unset]  flex overflow-x-auto overflow-y-hidden md:gap-[84px] max-md:scroll-mx-8 scroll-mx-110p max-sm:gap-[24px] w-full flex-nowrap !snap-none">
+          <div ref={elRef} className="overscroll-auto scroll-custom pb-[84px] !scroll-px-[unset] mx-[32px] md:mx-0 flex overflow-x-auto overflow-y-hidden md:gap-[84px] max-md:scroll-mx-8 scroll-mx-110p max-sm:gap-[24px] w-full flex-nowrap !snap-none">
             <DomainsCard
               title={"Offentclicher CVerkher"}
               imageUrl={ImgExample01}
