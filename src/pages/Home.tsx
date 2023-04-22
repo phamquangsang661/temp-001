@@ -28,7 +28,7 @@ export default function () {
             <BackToTop />
             <RefreshedPopup isOpen={isOpen} onClose={close} />
             <ScrollIndicator className="max-md:hidden" />
-            <div className="sm:overflow-hidden m-auto min-h-screen md:flex md:flex-col md:overflow-y-auto">
+            <div className="overflow-hidden m-auto min-h-screen md:flex md:flex-col md:overflow-y-auto md:max-w-[1440px]">
                 <Hero />
                 <OurMission />
                 <WhatWeDo />

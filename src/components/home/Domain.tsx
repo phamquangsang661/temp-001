@@ -21,7 +21,7 @@ export function Domain() {
           Domains
         </HomeTitle>
 
-        <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center md:max-w-[1440px]">
+        <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center">
           <div ref={elRef} className="overscroll-auto scroll-custom pb-[84px] !scroll-px-[unset] mx-[32px] md:mx-0 flex overflow-x-auto overflow-y-hidden md:gap-[84px] md:scroll-mx-220p max-sm:gap-[24px] w-full flex-nowrap !snap-none">
             <DomainsCard
               title={"Offentclicher CVerkher"}

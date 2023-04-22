@@ -14,11 +14,11 @@ export function FocusPoint() {
     const onClickSetSelectedPoint = (point: number) => () => {
         setSelectedPoint(point)
     }
-    return <section className="md:pl-[70px] md:pr-0 md:pt-[81px] flex flex-col gap-[67px] md:gap-[81px] overflow-visible pb-[192px] md:pb-[218px] ">
-        <HomeTitle className="hidden md:flex">Konzentriert auf das Wesentliche. </HomeTitle>
+    return <section className="md:pl-[70px] md:pr-0 md:pt-[81px] flex flex-col gap-[67px] md:gap-[81px] overflow-visible pb-[192px] md:pb-[218px] mx-auto md:max-w-[1440px]">
+        <HomeTitle className="hidden md:flex md:w-full">Konzentriert auf das Wesentliche. </HomeTitle>
         <HomeMobileTitle className="md:hidden">Focus Point</HomeMobileTitle>
-        <div className="flex flex-row gap-[10px]">
-            <div className="pl-[44px] pt-[42px] hidden md:flex flex-col gap-[9px] text-typo-h5 w-max whitespace-nowrap   ">
+        <div className="flex flex-row gap-[10px] ">
+            <div className="pl-[44px] pt-[42px] hidden md:flex flex-col gap-[9px] text-typo-h5 w-max whitespace-nowrap ">
                 <FocusPointTag isSelected={selectedPoint == 1} onClick={onClickSetSelectedPoint(1)}>Project Manager</FocusPointTag>
                 <FocusPointTag isSelected={selectedPoint == 2} onClick={onClickSetSelectedPoint(2)}>Scrum Master</FocusPointTag>
                 <FocusPointTag isSelected={selectedPoint == 3} onClick={onClickSetSelectedPoint(3)}>Product Owner</FocusPointTag>

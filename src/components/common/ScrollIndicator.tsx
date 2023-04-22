@@ -26,7 +26,7 @@ export function ScrollIndicator({ className }: ScrollIndicator) {
 
   return (
     <div
-      className={`fixed z-[999] top-[100px] left-[18px] w-[10px] h-[160px] rounded-full ${className} bg-[#C1121F4D] bg-opacity-30 overflow-hidden`}
+      className={`md:fixed z-[999] top-[100px] left-[18px] w-[10px] h-[160px] rounded-full ${className} bg-[#C1121F4D] bg-opacity-30 overflow-hidden`}
     >
         <div className={`process w-full rounded-full bg-primary-main`} style={{ height: `${scrollTop}%` }}></div>
     </div>
