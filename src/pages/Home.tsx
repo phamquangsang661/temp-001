@@ -11,7 +11,7 @@ import {
     WorkWithUs,
 } from "@components/home";
 import { RefreshedPopup } from "@components/popup";
-import { usePopup,useFixedPopup } from "@hooks/index";
+import { usePopup } from "@hooks/index";
 import { useEffect } from "react";
 
 export default function () {
@@ -27,7 +27,7 @@ export default function () {
             <Header />
             <BackToTop />
             <RefreshedPopup isOpen={isOpen} onClose={close} />
-            <ScrollIndicator className="max-md:hidden"/>
+            <ScrollIndicator className="max-md:hidden" />
             <div className="sm:overflow-hidden m-auto min-h-screen md:flex md:flex-col md:overflow-y-auto">
                 <Hero />
                 <OurMission />
