@@ -15,12 +15,12 @@ export function Domain() {
   return (
     <>
 
-      <section id="domain-container" className="domain flex flex-col gap-1 w-full justify-center h-fit md:min-h-screen mx-auto md:pl-[70px] max-md:pl-0">
-        <HomeTitle textClassName="text-black" className="hidden md:flex">
+      <section id="domain-container" className="domain flex flex-col gap-1 w-full justify-center h-fit md:min-h-screen mx-auto md:pl-[70px] max-md:pl-0 items-center">
+        <HomeTitle textClassName="text-black" className="hidden md:flex md:w-full">
           Domains
         </HomeTitle>
 
-        <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center">
+        <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center md:max-w-[1440px]">
           <div ref={elRef} className="overscroll-auto scroll-custom pb-[84px] !scroll-px-[unset] mx-[32px] md:mx-0 flex overflow-x-auto overflow-y-hidden md:gap-[84px] md:scroll-mx-220p max-sm:gap-[24px] w-full flex-nowrap !snap-none">
             <DomainsCard
               title={"Offentclicher CVerkher"}

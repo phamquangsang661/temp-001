@@ -1,4 +1,4 @@
-import { BackToTop, Footer, Header } from "@components/common";
+import { BackToTop, Footer, Header, ScrollIndicator } from "@components/common";
 import {
     Domain,
     FocusPoint,
@@ -27,7 +27,8 @@ export default function () {
             <Header />
             <BackToTop />
             <RefreshedPopup isOpen={isOpen} onClose={close} />
-            <div className="overflow-hidden m-auto">
+            <ScrollIndicator className="max-md:hidden"/>
+            <div className="sm:overflow-hidden m-auto min-h-screen md:flex md:flex-col md:overflow-y-auto">
                 <Hero />
                 <OurMission />
                 <WhatWeDo />

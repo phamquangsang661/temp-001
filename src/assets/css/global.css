@@ -85,6 +85,13 @@ body {
         margin-right: 32px;
     }
 
+    .layout-scroll{
+        direction:rtl;
+    }
+
+    .layout-scroll section, .layout-scroll div {
+        direction:ltr;
+    }
 
     .scroll-mx-220p::-webkit-scrollbar-track {
         margin-left: 220px;
