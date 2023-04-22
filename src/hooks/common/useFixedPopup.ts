@@ -16,9 +16,9 @@ export function useFixedPopup() {
     const scrollY = body.style.top;
     body.style.position = "";
     body.style.top = "";
-    window.scrollTo({
-      top:parseInt(scrollY || "0") * -1,
-      behavior:"instant"
+    (window as any).scrollTo({
+      top: parseInt(scrollY || "0") * -1,
+      behavior: "instant",
     });
     close();
   };
