@@ -8,7 +8,7 @@ export function SocialBenefits() {
     return (
         <>
             <section
-                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px]   h-fit md:!h-[1116px] mb-[90px]  md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
+                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px]   h-fit md:!h-[1116px] mb-[90px] max-w-[1300px] md:justify-center md:mb-0  md:pr-0 md:pl-[70px]">
                 <div className="pt-0  px-[32px] md:px-0 md:pt-[304px] flex flex-col gap-[79px] w-full md:w-fit">
                     <HomeTitle textClassName="text-black" className="hidden md:flex">
                         Social <span className="text-primary-light">Benefits</span>

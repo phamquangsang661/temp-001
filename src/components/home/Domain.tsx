@@ -9,7 +9,8 @@ export function Domain() {
     isOffsetItem: true,
     offset: -111,
     areaCheckOffset: 500,
-    autoCenterItem: true
+    autoCenterItem: true,
+    autoFocusScroll: true
   })
 
   return (
